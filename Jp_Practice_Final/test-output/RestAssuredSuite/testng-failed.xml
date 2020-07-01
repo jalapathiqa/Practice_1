@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAssuredSuite]">
+  <listeners>
+    <listener class-name="utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="RestAssuredTests(failed)">
+    <classes>
+      <class name="test_TestNG.RestassuredAPI_Get_ValidateJSONResponse">
+        <methods>
+          <include name="getDelhi_weatherDetails"/>
+        </methods>
+      </class> <!-- test_TestNG.RestassuredAPI_Get_ValidateJSONResponse -->
+      <class name="test_TestNG.RestassuredAPI_Get">
+        <methods>
+          <include name="getweatherDetails"/>
+        </methods>
+      </class> <!-- test_TestNG.RestassuredAPI_Get -->
+      <class name="test_TestNG.RestassuredAPI_Get_Authentication">
+        <methods>
+          <include name="AuthenticationTest"/>
+        </methods>
+      </class> <!-- test_TestNG.RestassuredAPI_Get_Authentication -->
+      <class name="test_TestNG.RestassuredAPI_POST">
+        <methods>
+          <include name="Registration"/>
+        </methods>
+      </class> <!-- test_TestNG.RestassuredAPI_POST -->
+    </classes>
+  </test> <!-- RestAssuredTests(failed) -->
+</suite> <!-- Failed suite [RestAssuredSuite] -->

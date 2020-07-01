@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2609" started-at="2020-07-01T03:32:59Z" finished-at="2020-07-01T03:33:02Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2609" started-at="2020-07-01T03:32:59Z" finished-at="2020-07-01T03:33:02Z">
+      <class name="test_new.APIGetTest">
+        <test-method status="PASS" signature="getAPI()[pri:0, instance:test_new.APIGetTest@5702b3b1]" name="getAPI" duration-ms="115" started-at="2020-07-01T03:33:02Z" finished-at="2020-07-01T03:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPI -->
+      </class> <!-- test_new.APIGetTest -->
+      <class name="test_new.APIGetTest_withHeaders">
+        <test-method status="PASS" signature="getAPI()[pri:0, instance:test_new.APIGetTest_withHeaders@69ea3742]" name="getAPI" duration-ms="105" started-at="2020-07-01T03:33:02Z" finished-at="2020-07-01T03:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPI -->
+      </class> <!-- test_new.APIGetTest_withHeaders -->
+      <class name="test_new.APIPostTest">
+        <test-method status="PASS" signature="postAPI()[pri:0, instance:test_new.APIPostTest@25bbe1b6]" name="postAPI" duration-ms="2028" started-at="2020-07-01T03:33:00Z" finished-at="2020-07-01T03:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postAPI -->
+      </class> <!-- test_new.APIPostTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
