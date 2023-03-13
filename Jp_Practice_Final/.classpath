@@ -11,14 +11,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Rishi/Desktop/SeleniumLibrary/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Rishi/Desktop/SeleniumLibrary/client-combined-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Rishi/Desktop/SeleniumLibrary/client-combined-3.141.59-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Rishi/Desktop/SeleniumLibrary/libs/byte-buddy-1.8.15.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Rishi/Desktop/SeleniumLibrary/libs/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Rishi/Desktop/SeleniumLibrary/libs/guava-25.0-jre.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Rishi/Desktop/SeleniumLibrary/libs/okhttp-3.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Rishi/Desktop/SeleniumLibrary/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

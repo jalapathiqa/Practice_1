@@ -10,15 +10,15 @@ public class loginToHRM_PagePbjects {
 	WebDriver driver;
 
 	// define user name
-	@FindBy(how = How.ID, using = "txtUsername")
+	@FindBy(how = How.XPATH, using = "//input[@placeholder='Username']")
 	private WebElement userName;
 
 	// define password
-	@FindBy(how = How.ID, using = "txtPassword")
+	@FindBy(how = How.XPATH, using = "//input[@placeholder='Password']")
 	private WebElement passWord;
 
 	// submit button
-	@FindBy(how = How.ID, using = "btnLogin")
+	@FindBy(how = How.XPATH, using = "//button[normalize-space()='Login']")
 	private WebElement loginBtn;
 
 	public void loginToHRM(String uName, String pWord) {

@@ -7,25 +7,25 @@ import org.testng.TestListenerAdapter;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Listeners extends TestListenerAdapter {
 
-	public ExtentHtmlReporter htmlReporter;
+	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
 
 	@Override
 	public void onStart(ITestContext testContext) {
 
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/Reports/Listeners_ExtentReports.html");
-		htmlReporter.config().setDocumentTitle("Automation Report");
-		htmlReporter.config().setReportName("Rest Assured API Report");
-		htmlReporter.config().setTheme(Theme.DARK);
+		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/Listeners_ExtentReports.html");
+		sparkReporter.config().setDocumentTitle("Automation Report");
+		sparkReporter.config().setReportName("Rest Assured API Report");
+		sparkReporter.config().setTheme(Theme.DARK);
 
 		extent = new ExtentReports();
-		extent.attachReporter(htmlReporter);
+		extent.attachReporter(sparkReporter);
 		extent.setSystemInfo("Host name", "localhost");
 		extent.setSystemInfo("Environment", "QA");
 		extent.setSystemInfo("user", "Jp");

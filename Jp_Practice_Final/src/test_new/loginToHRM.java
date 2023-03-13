@@ -17,10 +17,11 @@ public class loginToHRM extends BaseClass {
 	}
 
 	@Test(dataProvider = "HRMLogin")
-	public void loginHRM(String Execute, String name, String word) {
+	public void loginHRM(String Execute, String name, String word) throws InterruptedException {
 
 		loginToHRM_PagePbjects hrm = PageFactory.initElements(driver, loginToHRM_PagePbjects.class);
 		hrm.loginToHRM(name, word);
+		Thread.sleep(5000);
 	}
 
 }

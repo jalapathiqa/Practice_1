@@ -1,23 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="4219" started-at="2020-07-02T18:23:32Z" finished-at="2020-07-02T18:23:36Z">
+  <suite started-at="2023-02-15T20:33:45 PST" name="Default suite" finished-at="2023-02-15T20:34:07 PST" duration-ms="22047">
     <groups>
     </groups>
-    <test name="Test" duration-ms="4219" started-at="2020-07-02T18:23:32Z" finished-at="2020-07-02T18:23:36Z">
-      <class name="test_new.APIGetTest">
-        <test-method status="PASS" signature="getAPI()[pri:0, instance:test_new.APIGetTest@1ed4004b]" name="getAPI" duration-ms="2586" started-at="2020-07-02T18:23:32Z" finished-at="2020-07-02T18:23:35Z">
+    <test started-at="2023-02-15T20:33:45 PST" name="Default test" finished-at="2023-02-15T20:34:07 PST" duration-ms="22047">
+      <class name="test_new.LogintoFB">
+        <test-method is-config="true" signature="runBeforeEverything()[pri:0, instance:test_new.LogintoFB@5e8f9e2d]" started-at="2023-02-15T20:33:44 PST" name="runBeforeEverything" finished-at="2023-02-15T20:33:45 PST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAPI -->
-      </class> <!-- test_new.APIGetTest -->
-      <class name="test_new.APIPostTest">
-        <test-method status="PASS" signature="postAPI()[pri:0, instance:test_new.APIPostTest@ff5b51f]" name="postAPI" duration-ms="901" started-at="2020-07-02T18:23:35Z" finished-at="2020-07-02T18:23:36Z">
+        </test-method> <!-- runBeforeEverything -->
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:test_new.LogintoFB@5e8f9e2d]" started-at="2023-02-15T20:33:45 PST" name="initializeBrowser" finished-at="2023-02-15T20:33:50 PST" duration-ms="4915" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postAPI -->
-      </class> <!-- test_new.APIPostTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- initializeBrowser -->
+        <test-method is-config="true" signature="runBeforeTest(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:test_new.LogintoFB@5e8f9e2d]" started-at="2023-02-15T20:33:50 PST" name="runBeforeTest" finished-at="2023-02-15T20:33:50 PST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_new.LogintoFB.LoginFaceBook(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LogintoFB.LoginFaceBook(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_new.LogintoFB@5e8f9e2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runBeforeTest -->
+        <test-method signature="LoginFaceBook(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_new.LogintoFB@5e8f9e2d]" started-at="2023-02-15T20:33:50 PST" name="LoginFaceBook" data-provider="FBLogin" finished-at="2023-02-15T20:33:50 PST" duration-ms="17" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jpreddy911@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Selenium@1423]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at PageObjects.FaceBookLogin_PageObjects.loginToFB(FaceBookLogin_PageObjects.java:30)
+at test_new.LogintoFB.LoginFaceBook(LogintoFB.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFaceBook -->
+        <test-method is-config="true" signature="runAfterTest(org.testng.ITestResult)[pri:0, instance:test_new.LogintoFB@5e8f9e2d]" started-at="2023-02-15T20:33:50 PST" name="runAfterTest" finished-at="2023-02-15T20:33:50 PST" duration-ms="270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginFaceBook status=FAILURE method=LogintoFB.LoginFaceBook(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_new.LogintoFB@5e8f9e2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runAfterTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test_new.LogintoFB@5e8f9e2d]" started-at="2023-02-15T20:33:50 PST" name="afterClass" finished-at="2023-02-15T20:34:07 PST" duration-ms="16802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_new.LogintoFB@5e8f9e2d]" started-at="2023-02-15T20:34:07 PST" name="tearDown" finished-at="2023-02-15T20:34:07 PST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_new.LogintoFB -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

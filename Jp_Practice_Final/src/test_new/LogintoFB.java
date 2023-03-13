@@ -8,8 +8,9 @@ import PageObjects.FaceBookLogin_PageObjects;
 import baseClass.BaseClass;
 
 public class LogintoFB extends BaseClass {
-
 	String testCaseName = "FBLogin";
+
+//	FaceBookLogin_PageObjects fb;
 
 	@DataProvider(name = "FBLogin")
 	public Object[][] getData() {
@@ -20,7 +21,7 @@ public class LogintoFB extends BaseClass {
 	public void LoginFaceBook(String Execute, String email, String pWord) throws InterruptedException {
 
 		FaceBookLogin_PageObjects fb = PageFactory.initElements(driver, FaceBookLogin_PageObjects.class);
-
+		fb = new FaceBookLogin_PageObjects(driver);
 		fb.loginToFB(email, pWord);
 		Thread.sleep(2000);
 	}
